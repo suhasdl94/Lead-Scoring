@@ -11,14 +11,14 @@ We start our model by importing data and performing EDA on this.
 •	Handling missing data is where we see different techniques for categorical and numerical columns. Since we have select as one of the categories in many columns we imputed this with the new category. For continuous variables, outliers were few and it constituted close to 1% of data, so capping them wouldn't hurt our model
 
 ### Once the above steps are taken care, we have our data ready to go ahead with modeling steps. 
-•	Here we start modeling by creating dummy variables, removing highly correlated variables based on VIF and correlation matrix.
-•	We need not drop any variables if VIF is good and not crossing threshold (say 5).
-•	After this, if we plot ROC, we see the area under the curve is more representing model has high True positive rate
-•	To find the optimal cut-off point we plot accuracy, sensitivity, and specificity to see the point where all three meet.
-Calculate the Sensitivity and Specificity of the model to look at the predictive power for True and False cases. Predict a test set and then see the predictive power again on the test set to see how well the model has trained.
-Conclusion:
+•	Here we start modeling by creating dummy variables, removing highly correlated variables based on VIF and correlation matrix.\
+•	We need not drop any variables if VIF is good and not crossing threshold (say 5).\
+•	After this, if we plot ROC, we see the area under the curve is more representing model has high True positive rate.\
+•	To find the optimal cut-off point we plot accuracy, sensitivity, and specificity to see the point where all three meet.\
+Calculate the Sensitivity and Specificity of the model to look at the predictive power for True and False cases. Predict a test set and then see the predictive power again on the test set to see how well the model has trained.\
+#### Conclusion:
 
-#### Through this exercise we get to know important factors such as time spent on the website, reverting to emails and place we live in effects a lot for our model. Once we have a Business understanding of the importance of variables, we can again tune this model for better results.
+Through this exercise we get to know important factors such as time spent on the website, reverting to emails and place we live in effects a lot for our model. Once we have a Business understanding of the importance of variables, we can again tune this model for better results.
 For now if we look at importance of variable predicted by our model, we can say it’s closer to real life situation and can easily address the problem we have here.
 Result we got from our model is people who live in metropolitan cities like Mumbai and who are not student are the ones looking to enroll to this program which makes sense. By looking at this we can say the model we built is pretty good and can predict Hot Leads for more than 85% of the time.
 
